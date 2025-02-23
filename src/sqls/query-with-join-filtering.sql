@@ -19,9 +19,9 @@ quantidade total vendida de cada produto. Filtre apenas as categorias que
 possuem mais de 100 unidades vendidas no total.
 */
 
-CREATE DATABASE IF NOT EXISTS sales_db;
+CREATE DATABASE IF NOT EXISTS test_db;
 
-USE sales_db;
+USE test_db;
 
 CREATE TABLE categories (
   id INT PRIMARY KEY AUTO_INCREMENT,

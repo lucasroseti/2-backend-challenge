@@ -15,9 +15,9 @@ Em seguida, escreva uma query para listar os resumos mensais apenas para contas
  que tiveram transações superiores a 10.000 em pelo menos um mês.
 */
 
-CREATE DATABASE IF NOT EXISTS sales_db;
+CREATE DATABASE IF NOT EXISTS test_db;
 
-USE sales_db;
+USE test_db;
 
 CREATE TABLE transactions (
   id INT PRIMARY KEY AUTO_INCREMENT,

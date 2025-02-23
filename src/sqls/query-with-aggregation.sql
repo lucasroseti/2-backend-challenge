@@ -9,9 +9,9 @@ Escreva uma query para calcular a receita total (quantity * price) para
 cada produto, ordenando por receita total em ordem decrescente.
 */
 
-CREATE DATABASE IF NOT EXISTS sales_db;
+CREATE DATABASE IF NOT EXISTS test_db;
 
-USE sales_db;
+USE test_db;
 
 CREATE TABLE IF NOT EXISTS sales (
   id INT AUTO_INCREMENT PRIMARY KEY,

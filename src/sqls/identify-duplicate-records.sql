@@ -8,9 +8,9 @@ Escreva uma query para identificar os emails que estão duplicados,
 juntamente com o número de ocorrências.
 */
 
-CREATE DATABASE IF NOT EXISTS sales_db;
+CREATE DATABASE IF NOT EXISTS test_db;
 
-USE sales_db;
+USE test_db;
 
 CREATE TABLE IF NOT EXISTS users (
   id INT AUTO_INCREMENT PRIMARY KEY,
