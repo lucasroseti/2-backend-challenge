@@ -1,23 +1,6 @@
-/* 2.4 Consulta com JOIN Simples */
-/* Dadas as tabelas: orders
+CREATE DATABASE IF NOT EXISTS test_db;
 
-id (INT)
-customer_id (INT)
-total (DECIMAL)
-
-customers
-id (INT)
-name (VARCHAR)
-country (VARCHAR)
-
-Escreva uma query para listar o nome dos clientes e o total de 
-compras realizadas, ordenando pelo total de compras em ordem decrescente. 
-Inclua apenas os clientes que realizaram compras.
-*/
-
-CREATE DATABASE IF NOT EXISTS sales_db;
-
-USE sales_db;
+USE test_db;
 
 CREATE TABLE customers (
   id INT PRIMARY KEY AUTO_INCREMENT,
@@ -46,14 +29,17 @@ INSERT INTO customers (name, country) VALUES
 
 INSERT INTO orders (customer_id, total) VALUES
 (1, 750.75),
+(1, 150.00),
 (2, 320.50),
 (6, 540.30),
 (8, 120.00),
+(8, 420.00),
 (7, 1120.00),
 (9, 810.00);
 
-select cust.name, ord.total from customers cust
+select cust.name, sum(ord.total) as total from customers cust
   inner join orders ord on ord.customer_id = cust.id
+  group by customer_id
   order by ord.total desc;
 
 DROP TABLE IF EXISTS orders;

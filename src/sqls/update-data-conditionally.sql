@@ -1,16 +1,6 @@
-/* 2.3 Atualizar Dados Condicionalmente */
-/* Dada a tabela employees com as colunas:
-id (INT)
-name (VARCHAR)
-salary (DECIMAL)
+CREATE DATABASE IF NOT EXISTS test_db;
 
-Escreva uma query para aumentar o salário em 10% para os empregados 
-que ganham menos de 5000, mas não altere os outros.
-*/
-
-CREATE DATABASE IF NOT EXISTS sales_db;
-
-USE sales_db;
+USE test_db;
 
 CREATE TABLE IF NOT EXISTS employees (
   id INT AUTO_INCREMENT PRIMARY KEY,

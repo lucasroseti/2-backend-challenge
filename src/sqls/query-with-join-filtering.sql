@@ -1,27 +1,6 @@
-/* 2.5 Consulta com JOIN e Filtragem */
-/* Dadas as tabelas:
-products
-id (INT)
-name (VARCHAR)
-category_id (INT)
+CREATE DATABASE IF NOT EXISTS test_db;
 
-categories
-id (INT)
-name (VARCHAR)
-
-sales
-id (INT)
-product_id (INT)
-quantity (INT)
-
-Escreva uma query para listar o nome da categoria, o nome do produto e a 
-quantidade total vendida de cada produto. Filtre apenas as categorias que 
-possuem mais de 100 unidades vendidas no total.
-*/
-
-CREATE DATABASE IF NOT EXISTS sales_db;
-
-USE sales_db;
+USE test_db;
 
 CREATE TABLE categories (
   id INT PRIMARY KEY AUTO_INCREMENT,
