@@ -1,5 +1,6 @@
+type Operation = 'add' | 'subtract' | 'multiply' | 'divide'
 
-export function calculate(operation: string, number: number, number2: number): number | string {
+export function calculate(operation: Operation, number: number, number2: number): number {
   switch (operation) {
     case 'add':
       return number + number2
