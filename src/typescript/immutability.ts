@@ -1,10 +1,3 @@
-/** 1.3 Imutabilidade e Manipulação de Arrays */
-/**
- * Implemente uma função que recebe uma lista de números e retorna uma nova 
- * lista onde todos os números negativos são transformados em positivos, 
- * sem modificar a lista original.
- */
-
 import { makeAllPositive } from '../functions/makeAllPositive'
 
 export function immutability() {
