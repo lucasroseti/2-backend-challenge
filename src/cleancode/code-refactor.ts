@@ -19,7 +19,7 @@ interface Items {
 
 const MAX_NOT_EXPENSIVE = 100
 
-function processItems(items: Items[]) {
+export function processItems(items: Items[]) {
   items.forEach((item) => {
     const { price, name } = item
 

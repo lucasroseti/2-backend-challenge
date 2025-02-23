@@ -1,8 +1,7 @@
 import { FastifyInstance } from 'fastify'
 
+import { cleanCodeRoutes } from './cleancode'
+
 export async function routes(app: FastifyInstance) {
-  app.get('/', async (req, res) => {
-    const setup = 'Setup'
-    return res.status(200).send({ setup })
-  })
+  app.register(cleanCodeRoutes, { prefix: '/cleancode' })
 }

@@ -13,7 +13,7 @@
 */
 const MODULE_BASE = 2
 
-function checkNumberIsEvenAndDouble(items: number[]): number[] {
+export function checkNumberIsEvenAndDouble(items: number[]): number[] {
   return items
     .filter((item) => checkNumberIsEven(item))
     .map((item) => doubleNumber(item))

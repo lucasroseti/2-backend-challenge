@@ -17,7 +17,7 @@
 
 const MAX_PRICE_LIMIT = 100
 
-function calculateDiscount(price: number, isPremium: boolean): number {
+export function calculateDiscount(price: number, isPremium: boolean): number {
   const priceIsGreaterThanHundred = price > MAX_PRICE_LIMIT
 
   const discount = isPremium
