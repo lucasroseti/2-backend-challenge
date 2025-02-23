@@ -1,13 +1,3 @@
-/* 2.2 Identificar Registros Duplicados */
-/* Dada a tabela users com as colunas:
-id (INT)
-email (VARCHAR)
-name (VARCHAR)
-
-Escreva uma query para identificar os emails que estão duplicados, 
-juntamente com o número de ocorrências.
-*/
-
 CREATE DATABASE IF NOT EXISTS test_db;
 
 USE test_db;

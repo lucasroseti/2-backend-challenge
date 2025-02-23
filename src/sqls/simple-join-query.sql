@@ -1,20 +1,3 @@
-/* 2.4 Consulta com JOIN Simples */
-/* Dadas as tabelas: orders
-
-id (INT)
-customer_id (INT)
-total (DECIMAL)
-
-customers
-id (INT)
-name (VARCHAR)
-country (VARCHAR)
-
-Escreva uma query para listar o nome dos clientes e o total de 
-compras realizadas, ordenando pelo total de compras em ordem decrescente. 
-Inclua apenas os clientes que realizaram compras.
-*/
-
 CREATE DATABASE IF NOT EXISTS test_db;
 
 USE test_db;

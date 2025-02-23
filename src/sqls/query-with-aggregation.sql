@@ -1,14 +1,3 @@
-/* 2.1 Consulta com Agregação */
-/* Dada a tabela sales com as colunas: 
-id (INT)
-product (VARCHAR)
-quantity (INT)
-price (DECIMAL)
-
-Escreva uma query para calcular a receita total (quantity * price) para 
-cada produto, ordenando por receita total em ordem decrescente.
-*/
-
 CREATE DATABASE IF NOT EXISTS test_db;
 
 USE test_db;
